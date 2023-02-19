@@ -1,0 +1,52 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  & > *{
+    width: calc(100% / 3);
+  }
+  &__footer{
+    p{
+      line-height: 22.5px;
+    }
+    a{
+      text-decoration: underline;
+    }
+  }
+  &__blog{
+    &__link{
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 50px auto;
+      column-gap: 15px;
+    }
+    p{
+      font-size: 18px;
+      margin: 0 0 5px;
+    }
+    span{
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__pop{
+    &__tags{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 3px;
+      row-gap: 15px;
+      align-items: center;
+    }
+    
+    span{
+      padding: 3px 8px;
+      color: #fff;
+      font-size: 12px;
+      background-color: #616161;
+      display: inline-block;
+    }
+    span:first-child{
+      background-color: black;
+      font-size: 15px;
+    }
+  }
+}
